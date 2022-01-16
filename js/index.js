@@ -12,6 +12,7 @@ for(let i = 0; i < dates.length; i++) {
     h2.className = 'timeline-item-title'
     h2.textContent = dates[i].title
 
+const timeline = document.querySelector(".timeline");
 
     const span = document.createElement("span")
     span.className = 'timeline-item-date'
@@ -25,9 +26,6 @@ for(let i = 0; i < dates.length; i++) {
     const info = document.createElement("info")
     info.className = 'timeline-item-more-info'
     info.textContent = dates[i].fullDescription
-
-    const timeline = document.querySelector(".timeline")
-    
 
 
     newDiv.appendChild(h2)
