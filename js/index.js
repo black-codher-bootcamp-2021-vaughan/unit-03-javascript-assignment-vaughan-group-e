@@ -60,5 +60,9 @@ for (let i = 0; i < dates.length; i++) {
     closeButton.id = "modal-close-button";
     closeButton.textContent = "Close";
     modal.appendChild(closeButton);
-  }
+    closeButton.addEventListener("click", closeModal)
+ 
+  function closeModal() {
+    newDiv.removeChild(modal);
+  } }
 }
