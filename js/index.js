@@ -6,8 +6,6 @@ newDiv.className = "timeline-item";
 
 for (let i = 0; i < dates.length; i++) {
   const timeline = document.querySelector(".timeline");
-  console.log(dates);
-  console.log(i);
   const h2 = document.createElement("h2");
   h2.className = "timeline-item-title";
   h2.textContent = dates[i].title;
