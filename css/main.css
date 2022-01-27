@@ -1,10 +1,12 @@
-@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@300&display=swap%27');
-body { font-family: 'Source Code Pro', monospace;
-  background-color: #ffebe8;}
+@import url("https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@300&display=swap%27");
+body {
+  font-family: "Source Code Pro", monospace;
+  background-color: #ffebe8;
+}
 
 h1 {
-  font-family: 'Source Code Pro', monospace;
-  position: relative; 
+  font-family: "Source Code Pro", monospace;
+  position: relative;
   width: max-content;
 }
 
@@ -24,53 +26,48 @@ h1::after {
 }
 
 h1::after {
-  width:0.125em;
+  width: 0.125em;
   background: black;
-  animation: 
-  typewriter 4s steps(24) forwards, 
-  blink 750ms infinite;
+  animation: typewriter 4s steps(24) forwards, blink 750ms infinite;
 }
 
 @keyframes typewriter {
   to {
-    left: 100%
+    left: 100%;
   }
 }
 
 @keyframes blink {
-
   to {
     background: transparent;
   }
 }
 
-
 /* Modal Box */
-#modal-container{
-  position: fixed; 
-  z-index: 1; 
+#modal-container {
+  position: fixed;
+  z-index: 1;
   left: 0;
   top: 0;
-  width: 100%; 
-  height: 70vh; 
-  overflow: auto; 
-  background-color: #FAD5D5  ; 
+  width: 100%;
+  height: 70vh;
+  overflow: auto;
+  background-color: #fad5d5;
   padding: 20px;
-  border: 1px solid #D291BC;
-  border-radius:12px;
+  border: 1px solid #d291bc;
+  border-radius: 12px;
   width: 60%;
   height: 90%;
   margin: 0;
   box-sizing: border-box;
   margin-top: 50px;
-  margin-left: 260px; 
+  margin-left: 260px;
 }
 
-
-.timeline-item-more-info{
+.timeline-item-more-info {
   background: none;
-  border: 2px solid #D291BC;
-  border-radius:12px;
+  border: 2px solid #d291bc;
+  border-radius: 12px;
   font-family: var(--text-font);
   font-size: x-large;
   display: block;
@@ -79,23 +76,20 @@ h1::after {
   margin: 0 auto;
 }
 
-
-
-
-#modal-close-button{
-background: none;
-border: 2px solid #D291BC;
-border-radius: 12px;
-font-family: var(--text-font);
-font-size: x-large;
-display: block;
-width: 8em;
-height: 2em;
-margin: 0 auto;
+#modal-close-button {
+  background: none;
+  border: 2px solid #d291bc;
+  border-radius: 12px;
+  font-family: var(--text-font);
+  font-size: x-large;
+  display: block;
+  width: 8em;
+  height: 2em;
+  margin: 0 auto;
 }
 
-#modal-image{
-    width: 300px;
-    height: 300px;
-    margin-left: 200px;
+#modal-image {
+  width: 300px;
+  height: 300px;
+  margin-left: 200px;
 }

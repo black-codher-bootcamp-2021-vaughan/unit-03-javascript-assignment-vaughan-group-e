@@ -1,11 +1,28 @@
 import "./data.js";
 import { dates } from "./data.js";
 
-const newDiv = document.createElement("div");
-newDiv.className = "timeline-item";
+const timeline = document.querySelector(".timeline");
+
+const header = document.createElement("div");
+header.className = "header";
+timeline.appendChild(header);
+
+const companyName = document.createElement("h1");
+companyName.className = "companyName";
+companyName.textContent = "Mayme's Bakery Timeline";
+header.appendChild(companyName);
+
+const timelineTitle = document.createElement("h1");
+timelineTitle.className = "timelineTitle";
+timelineTitle.textContent = "History of Baking";
+header.appendChild(timelineTitle);
 
 for (let i = 0; i < dates.length; i++) {
   const timeline = document.querySelector(".timeline");
+
+  const newDiv = document.createElement("div");
+  newDiv.className = "timeline-item";
+
   const h2 = document.createElement("h2");
   h2.className = "timeline-item-title";
   h2.textContent = dates[i].title;
@@ -58,9 +75,10 @@ for (let i = 0; i < dates.length; i++) {
     closeButton.id = "modal-close-button";
     closeButton.textContent = "Close";
     modal.appendChild(closeButton);
-    closeButton.addEventListener("click", closeModal)
- 
-  function closeModal() {
-    newDiv.removeChild(modal);
-  } }
+    closeButton.addEventListener("click", closeModal);
+
+    function closeModal() {
+      newDiv.removeChild(modal);
+    }
+  }
 }
