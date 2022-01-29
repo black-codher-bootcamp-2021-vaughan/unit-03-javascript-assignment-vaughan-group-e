@@ -12,12 +12,6 @@ const companyName = document.createElement("h1");
 companyName.className = "companyName";
 companyName.textContent = "Mayme's Bakery Timeline";
 container.appendChild(companyName);
-
-const timelineTitle = document.createElement("h1");
-timelineTitle.className = "timelineTitle";
-timelineTitle.textContent = "History of Baking";
-container.appendChild(timelineTitle);
-
 container.appendChild(timeline);
 
 for (let i = 0; i < dates.length; i++) {
